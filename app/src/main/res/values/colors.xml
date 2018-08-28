@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#454545</color>
+    <color name="colorPrimaryDark">#454545</color>
+    <color name="background">#454545</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="barColor">#60FE56</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="textColorHint">#C2C5C5</color>
+    <color name="buttonColor">#60FE56</color>
+    <color name="buttonColorPressed">#00feaa</color>
+    <color name="errorText">#f19c3e</color>
+    <color name="edges">#37beff</color>
+</resources>

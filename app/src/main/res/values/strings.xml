@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IP Calculator</string>
+    <string name="startingAdrText"> </string>
+    <string name="incorrect_address">Incorrect address!</string>
+    <string name="incorrect_mask">Incorrect mask!</string>
+    <string name="incorrect_class">Incorrect class!</string>
+    <string name="incorrect_cidr">Incorrect cidr!</string>
+    <string name="subnetNotExist">Subnet not exist!</string>
+    <string name="btn_bin">bin</string>
+    <string name="btn_dec">dec</string>
+</resources>
