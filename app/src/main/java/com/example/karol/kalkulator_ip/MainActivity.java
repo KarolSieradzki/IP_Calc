@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import com.example.karol.kalkulator_ip.Enums.Id;
 import com.example.karol.kalkulator_ip.ObjectManager.ObjectManager;
@@ -15,10 +18,17 @@ import com.example.karol.kalkulator_ip.EditTexts.Addresses.AddressForSubnet;
 import com.example.karol.kalkulator_ip.EditTexts.Values.*;
 
 public class MainActivity extends AppCompatActivity {
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        MobileAds.initialize(this, "ca-app-pub-8456459850285477~9821860725");
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         int widthPixels = getResources().getDisplayMetrics().widthPixels;
 
